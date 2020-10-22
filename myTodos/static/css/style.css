@@ -97,6 +97,15 @@ body .container .content-wrap {
 }
 
 body .container .content-wrap .post-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
   background-color: #ffffff;
   padding: 30px 60px;
@@ -116,5 +125,33 @@ body .container .content-wrap .post-display p {
 
 body .container .content-wrap .post-display .date {
   font-size: 0.689rem;
+}
+
+body .container .content-wrap .post-display .info-content {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+body .container .content-wrap .post-display .info-link {
+  margin-left: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: end;
+  font-size: 1.2rem;
+}
+
+body .container .content-wrap .post-display .info-link .edit {
+  color: #dfdb08;
+}
+
+body .container .content-wrap .post-display .info-link .delete {
+  color: #d13636;
+  margin-left: 5px;
+}
+
+body .container .content-wrap .post-display .info-link .edit:hover, body .container .content-wrap .post-display .info-link .delete:hover {
+  color: #252525;
 }
 /*# sourceMappingURL=style.css.map */

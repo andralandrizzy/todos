@@ -26,9 +26,15 @@
     {% if tasks %}
     {% for task in tasks %}
         <div class="post-display">
-            <h2>{{task.title}}</h2>
-            <p>{{task.description}}</p>
-            <p class="date">{{task.created}}</p>
+            <div class="info-content">
+                <h2>{{task.title}}</h2>
+                <p>{{task.description}}</p>
+                <p class="date">{{task.created}}</p>
+            </div>
+                <div class="info-link">
+                <a class="edit" href="#"><i class="far fa-edit"></i></a>
+                <a class="delete" href="#"><i class="fas fa-trash"></i></a>
+            </div>
         </div>
     {% endfor %}
     {% endif %}

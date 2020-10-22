@@ -6,6 +6,7 @@ $bg:  #f0f0f0;
 $milk: #ffffff;
 $danger: #d13636;
 $gray: #2c2929;
+$edit: #dfdb08;
 
 *{
     margin: 0;
@@ -82,6 +83,9 @@ body {
             margin-top: 40px;
 
             .post-display {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 margin-bottom: 20px;
                 background-color: $milk;
                 padding: 30px 60px;
@@ -96,6 +100,25 @@ body {
                 }
                 .date{
                     font-size: 0.689rem;
+                }
+                .info-content {
+                    flex: 4;
+                }
+                .info-link {
+                    margin-left: 15px;;
+                    flex: 1;
+                    text-align: end;
+                    font-size: 1.2rem;
+                    .edit{
+                        color: $edit;
+                    }
+                    .delete{
+                        color: $danger;
+                        margin-left: 5px;
+                    }
+                    .edit:hover, .delete:hover{
+                        color: #252525;
+                    }
                 }
             }
         }
