@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just another todo list app create with Django</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Welcome to EnjOtit</h1>
+        <p class="header-para">In this site feel free to create a quick todos notes that could help further in your code.
+            of course you will have to create an account if in case you might want to save your notes
+            for later . and we offer auto-save while working.</p>
+        {% block content %}
+        {% endblock %}     
+    </div>
+    <script src=" {% static 'js/main.js' %}"></script>
+</body>
+</html>
+

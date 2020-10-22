@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&display=swap');
+
+
+$sky: #50d0f9;
+$bg:  #f0f0f0;
+$milk: #ffffff;
+$danger: #d74f4f;
+$gray: #2c2929;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $bg;
+    .container {
+        width: 100%;
+        max-width: 1020px;
+        margin: 65px auto;
+        padding: 0 15px;
+        h1{
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            font-family: 'Lobster', cursive;
+            margin-bottom: 18px;
+            color: $sky;
+        }
+        p{
+            font-size: 0.889rem;
+            line-height: 25px;
+        }
+        .header-para{
+            margin-bottom: 40px;
+        }
+
+        form {
+            .title, .desc{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 13px;
+                input[type=text], textarea{
+                    width: 100%;
+                    padding: 12px 14px;
+                    margin: 8px 0;
+                    background-color: $milk;
+                    outline: none;
+                    border: none;
+                    border-radius: 8px;
+                }
+                label {
+                    font-size: 0.9rem;
+                }
+                
+            }
+            input[type=submit] {
+                width: 100%;
+                padding: 12px 14px;
+                text-align: center;
+                font-size: 0.9rem;
+                font-weight: bolder;
+                background-color: $sky;
+                color: $milk;
+                border-radius: 8px;
+                border: none;
+                box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2) ;
+            }
+            input[type=submit]:hover, input[type=submit]:focus {
+                background-color: $milk;
+                color: $sky;
+                border: solid $sky 2px;
+                transition: all ease-out 2s;
+            }
+
+        }
+        .content-wrap {
+            margin-top: 40px;
+
+            .post-display {
+                margin-bottom: 20px;
+                background-color: $milk;
+                padding: 30px 60px;
+                border-radius: 8px;
+                box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2) ;
+                h2 {
+                    font-size: 1rem;
+                    margin-bottom: 18px;
+                }
+                p {
+                    color: $gray
+                }
+                .date{
+                    font-size: 0.689rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+

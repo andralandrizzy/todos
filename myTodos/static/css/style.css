@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0f0;
+}
+
+body .container {
+  width: 100%;
+  max-width: 1020px;
+  margin: 65px auto;
+  padding: 0 15px;
+}
+
+body .container h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-family: 'Lobster', cursive;
+  margin-bottom: 18px;
+  color: #50d0f9;
+}
+
+body .container p {
+  font-size: 0.889rem;
+  line-height: 25px;
+}
+
+body .container .header-para {
+  margin-bottom: 40px;
+}
+
+body .container form .title, body .container form .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 13px;
+}
+
+body .container form .title input[type=text], body .container form .title textarea, body .container form .desc input[type=text], body .container form .desc textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 8px 0;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+body .container form .title label, body .container form .desc label {
+  font-size: 0.9rem;
+}
+
+body .container form input[type=submit] {
+  width: 100%;
+  padding: 12px 14px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  background-color: #50d0f9;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+body .container form input[type=submit]:hover, body .container form input[type=submit]:focus {
+  background-color: #ffffff;
+  color: #50d0f9;
+  border: solid #50d0f9 2px;
+  -webkit-transition: all ease-out 2s;
+  transition: all ease-out 2s;
+}
+
+body .container .content-wrap {
+  margin-top: 40px;
+}
+
+body .container .content-wrap .post-display {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 30px 60px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+body .container .content-wrap .post-display h2 {
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+body .container .content-wrap .post-display p {
+  color: #2c2929;
+}
+
+body .container .content-wrap .post-display .date {
+  font-size: 0.689rem;
+}
+/*# sourceMappingURL=style.css.map */
